@@ -1,0 +1,71 @@
+html{
+	background: #000000;
+	font-family: 'Century Gothic';
+    font-size: 12px;
+	color: white;
+}
+
+/*Eliminamos los margenes y paddings que agrega el navegador por defecto*/
+* {
+  padding: 0;
+  margin: 0;
+}
+ 
+/*Agregamos margenes inferiores a los parrafos*/
+p {
+  margin-bottom: 20px;
+}
+
+#cabecera{
+	align-content: center;
+	height: 80px;
+	width: 100%; 
+	left: 0; 
+	top: 0; 
+	position: fixed;
+	z-index: 100;
+}
+
+#navegador {
+  float: left; /* Desplazamos el nav hacia la izquierda */
+  border-style: groove;
+  border-color: gray;
+  border-radius: 50px;
+}
+ 
+#navegador ul {
+  list-style: none;
+  overflow: hidden; /* Limpiamos errores de float */
+  border-radius: 50px;
+}
+ 
+#navegador ul li {
+  float: left;
+  font-size: 16px;
+  border-style: groove;
+  border-color: white;
+  border-radius: 50px;
+}
+ 
+#navegador ul li a {
+  display: block;
+  padding: 20px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50px;
+}
+ 
+nav ul li:hover {
+  background: #3ead47;
+}
+
+
+.contenido-iframe{
+	align-content: center;
+	border: none;
+	top: 240px;
+	position: fixed;
+	height: 80%;
+	width: 90%;
+	scroll-behavior: auto;
+}
